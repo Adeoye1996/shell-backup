@@ -1,17 +1,17 @@
 #include "shell.h"
 
 /**
- * _myexit - shell exits
- * @info: the structures containing potential arguments. used to maintain
- * a constant function prototype.
- * Return: success exits with a given exit status
+ * _myexit - it exits the shell
+ * @info: the structures containing potential arguments. Used to maintain
+ * constant the function prototype.
+ * Return: exits with a given exit status
  * (0) if info.argv[0] != "exit"
  */
 int _myexit(info_t *info)
 {
 	int exitcheck;
 
-	if (info->argv[1]) /* if there is an exit arguement */
+	if (info->argv[1]) /* If there is an exit arguement */
 	{
 		exitcheck = _erratoi(info->argv[1]);
 		if (exitcheck == -1)
@@ -30,10 +30,10 @@ int _myexit(info_t *info)
 }
 
 /**
- * _mycd - the process changes the curent directory
- * @info: the structures containing potential arguments. used to maintain
+ * _mycd - it changes the current directory of the process
+ * @info: the structures containing potential arguments. Used to maintain
  * the constant function prototype.
- * Return: success Always 0
+ * Return: Always 0
  */
 int _mycd(info_t *info)
 {
@@ -80,10 +80,10 @@ int _mycd(info_t *info)
 }
 
 /**
- * _myhelp - the process changes the current directory
- * @info: the structures containing potential arguments. used to maintain
+ * _myhelp - it change the current directory of the process
+ * @info: the structures containing potential arguments. Used to maintain
  * the constant function prototype.
- * Return: success Always 0
+ * Return: Always 0
  */
 int _myhelp(info_t *info)
 {
